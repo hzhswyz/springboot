@@ -7115,3 +7115,65 @@ org.springframework.web.client.HttpClientErrorException: 406 null
 [2018-12-29T17:28:18.018Z] [com.interceptor.TestHandlerInterceptor] [http-nio-80-exec-4] [29] [INFO ] TestHandlerInterceptor.afterCompletion
 [2018-12-29T17:28:18.018Z] [com.interceptor.TestHandlerInterceptor] [http-nio-80-exec-3] [24] [INFO ] TestHandlerInterceptor.postHandle()
 [2018-12-29T17:28:18.018Z] [com.interceptor.TestHandlerInterceptor] [http-nio-80-exec-3] [29] [INFO ] TestHandlerInterceptor.afterCompletion
+[2018-12-29T22:41:07.007Z] [com.SpringBootStartApplication] [main] [15] [INFO ] Hello Start
+[2018-12-29T22:41:07.007Z] [org.springframework.boot.StartupInfoLogger] [main] [48] [INFO ] Starting SpringBootStartApplication on DESKTOP-RBC26GF with PID 16420 (D:\Company_WorkSpace\springboot\target\classes started by HZH in D:\Company_WorkSpace\springboot)
+[2018-12-29T22:41:07.007Z] [org.springframework.boot.SpringApplication] [main] [659] [INFO ] No active profile set, falling back to default profiles: default
+[2018-12-29T22:41:08.008Z] [org.springframework.context.support.AbstractApplicationContext] [main] [581] [INFO ] Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@635eaaf1: startup date [Sat Dec 29 22:41:08 CST 2018]; root of context hierarchy
+[2018-12-29T22:41:08.008Z] [org.hibernate.validator.internal.util.Version] [background-preinit] [30] [INFO ] HV000001: Hibernate Validator 5.2.4.Final
+[2018-12-29T22:41:10.010Z] [org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer] [main] [88] [INFO ] Tomcat initialized with port(s): 80 (http)
+[2018-12-29T22:41:10.010Z] [org.apache.juli.logging.DirectJDKLog] [main] [179] [INFO ] Starting service Tomcat
+[2018-12-29T22:41:10.010Z] [org.apache.juli.logging.DirectJDKLog] [main] [179] [INFO ] Starting Servlet Engine: Apache Tomcat/8.5.4
+[2018-12-29T22:41:10.010Z] [org.apache.juli.logging.DirectJDKLog] [localhost-startStop-1] [179] [INFO ] Initializing Spring embedded WebApplicationContext
+[2018-12-29T22:41:10.010Z] [org.springframework.boot.context.embedded.EmbeddedWebApplicationContext] [localhost-startStop-1] [276] [INFO ] Root WebApplicationContext: initialization completed in 2306 ms
+[2018-12-29T22:41:10.010Z] [org.springframework.boot.web.servlet.ServletRegistrationBean] [localhost-startStop-1] [190] [INFO ] Mapping servlet: 'dispatcherServlet' to [/]
+[2018-12-29T22:41:10.010Z] [org.springframework.boot.web.servlet.AbstractFilterRegistrationBean] [localhost-startStop-1] [258] [INFO ] Mapping filter: 'characterEncodingFilter' to: [/*]
+[2018-12-29T22:41:10.010Z] [org.springframework.boot.web.servlet.AbstractFilterRegistrationBean] [localhost-startStop-1] [258] [INFO ] Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+[2018-12-29T22:41:10.010Z] [org.springframework.boot.web.servlet.AbstractFilterRegistrationBean] [localhost-startStop-1] [258] [INFO ] Mapping filter: 'httpPutFormContentFilter' to: [/*]
+[2018-12-29T22:41:10.010Z] [org.springframework.boot.web.servlet.AbstractFilterRegistrationBean] [localhost-startStop-1] [258] [INFO ] Mapping filter: 'requestContextFilter' to: [/*]
+[2018-12-29T22:41:10.010Z] [org.springframework.boot.web.servlet.AbstractFilterRegistrationBean] [localhost-startStop-1] [258] [INFO ] Mapping filter: 'simpleFilter' to: [/*]
+[2018-12-29T22:41:10.010Z] [com.filter.SimpleFilter] [localhost-startStop-1] [26] [INFO ] SimpleFilter.init()
+[2018-12-29T22:41:11.011Z] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter] [main] [534] [INFO ] Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@635eaaf1: startup date [Sat Dec 29 22:41:08 CST 2018]; root of context hierarchy
+[2018-12-29T22:41:11.011Z] [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry] [main] [543] [INFO ] Mapped "{[/detail]}" onto public org.springframework.http.ResponseEntity<com.javabean.OrderBean> com.controller.ConsumeController.create(com.javabean.OrderBean)
+[2018-12-29T22:41:11.011Z] [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry] [main] [543] [INFO ] Mapped "{[/template/detail]}" onto public java.lang.String com.controller.ConsumeController.createProducts(com.javabean.OrderBean)
+[2018-12-29T22:41:11.011Z] [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry] [main] [543] [INFO ] Mapped "{[/]}" onto public java.lang.String com.controller.SampleController.index()
+[2018-12-29T22:41:11.011Z] [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry] [main] [543] [INFO ] Mapped "{[/home]}" onto public java.lang.String com.controller.SampleController.home()
+[2018-12-29T22:41:11.011Z] [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry] [main] [543] [INFO ] Mapped "{[/createException],methods=[GET]}" onto public org.springframework.http.ResponseEntity<java.lang.Object> com.controller.SampleController.createException()
+[2018-12-29T22:41:11.011Z] [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry] [main] [543] [INFO ] Mapped "{[/showbean/id{id}/info{schoolinfo}]}" onto public org.springframework.http.ResponseEntity<com.javabean.UserBean> com.controller.SampleController.showbean(com.javabean.UserBean,java.lang.String,java.lang.String,java.lang.String,int,int,java.lang.String)
+[2018-12-29T22:41:11.011Z] [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry] [main] [543] [INFO ] Mapped "{[/users]}" onto public org.springframework.http.ResponseEntity<java.util.Collection<com.javabean.UserBean>> com.controller.SampleController.getProduct(org.springframework.http.HttpEntity<java.lang.String>)
+[2018-12-29T22:41:11.011Z] [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry] [main] [543] [INFO ] Mapped "{[/user/getUserByPost],methods=[POST]}" onto java.lang.String com.controller.UserController.getUserByPost(java.lang.String)
+[2018-12-29T22:41:11.011Z] [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry] [main] [543] [INFO ] Mapped "{[/user/getUserByJson],methods=[POST]}" onto java.lang.String com.controller.UserController.getUserByJson(java.lang.String)
+[2018-12-29T22:41:11.011Z] [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry] [main] [543] [INFO ] Mapped "{[/user/getUserByGet],methods=[GET]}" onto java.lang.String com.controller.UserController.getUserByGet(java.lang.String)
+[2018-12-29T22:41:11.011Z] [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry] [main] [543] [INFO ] Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+[2018-12-29T22:41:11.011Z] [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry] [main] [543] [INFO ] Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+[2018-12-29T22:41:11.011Z] [org.springframework.boot.autoconfigure.web.WebMvcAutoConfiguration$WebMvcAutoConfigurationAdapter] [main] [303] [INFO ] Adding welcome page: class path resource [static/index/index.html]
+[2018-12-29T22:41:11.011Z] [org.springframework.web.servlet.handler.AbstractUrlHandlerMapping] [main] [341] [INFO ] Root mapping to handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+[2018-12-29T22:41:11.011Z] [org.springframework.web.servlet.handler.AbstractUrlHandlerMapping] [main] [354] [INFO ] Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[2018-12-29T22:41:11.011Z] [org.springframework.web.servlet.handler.AbstractUrlHandlerMapping] [main] [354] [INFO ] Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[2018-12-29T22:41:11.011Z] [org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver] [main] [269] [INFO ] Detected @ExceptionHandler methods in productExceptionController
+[2018-12-29T22:41:11.011Z] [org.springframework.web.servlet.handler.AbstractUrlHandlerMapping] [main] [354] [INFO ] Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[2018-12-29T22:41:11.011Z] [org.springframework.jmx.export.MBeanExporter] [main] [431] [INFO ] Registering beans for JMX exposure on startup
+[2018-12-29T22:41:11.011Z] [org.apache.juli.logging.DirectJDKLog] [main] [179] [INFO ] Initializing ProtocolHandler ["http-nio-80"]
+[2018-12-29T22:41:11.011Z] [org.apache.juli.logging.DirectJDKLog] [main] [179] [INFO ] Starting ProtocolHandler [http-nio-80]
+[2018-12-29T22:41:11.011Z] [org.apache.juli.logging.DirectJDKLog] [main] [179] [INFO ] Using a shared selector for servlet write/read
+[2018-12-29T22:41:11.011Z] [org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer] [main] [186] [INFO ] Tomcat started on port(s): 80 (http)
+[2018-12-29T22:41:11.011Z] [org.springframework.boot.StartupInfoLogger] [main] [57] [INFO ] Started SpringBootStartApplication in 4.347 seconds (JVM running for 6.018)
+[2018-12-29T22:41:14.014Z] [org.apache.juli.logging.DirectJDKLog] [http-nio-80-exec-1] [179] [INFO ] Initializing Spring FrameworkServlet 'dispatcherServlet'
+[2018-12-29T22:41:14.014Z] [org.springframework.web.servlet.FrameworkServlet] [http-nio-80-exec-1] [489] [INFO ] FrameworkServlet 'dispatcherServlet': initialization started
+[2018-12-29T22:41:14.014Z] [org.springframework.web.servlet.FrameworkServlet] [http-nio-80-exec-1] [508] [INFO ] FrameworkServlet 'dispatcherServlet': initialization completed in 25 ms
+[2018-12-29T22:41:14.014Z] [com.filter.SimpleFilter] [http-nio-80-exec-1] [20] [INFO ] SimpleFilter.doFilter()----ContentType:null
+[2018-12-29T22:41:14.014Z] [com.interceptor.TestHandlerInterceptor] [http-nio-80-exec-1] [18] [INFO ] TestHandlerInterceptor.preHandle()
+[2018-12-29T22:41:14.014Z] [com.interceptor.TestHandlerInterceptor] [http-nio-80-exec-1] [24] [INFO ] TestHandlerInterceptor.postHandle()
+[2018-12-29T22:41:14.014Z] [com.filter.SimpleFilter] [http-nio-80-exec-1] [20] [INFO ] SimpleFilter.doFilter()----ContentType:null
+[2018-12-29T22:41:14.014Z] [com.interceptor.TestHandlerInterceptor] [http-nio-80-exec-1] [29] [INFO ] TestHandlerInterceptor.afterCompletion
+[2018-12-29T22:41:14.014Z] [com.filter.SimpleFilter] [http-nio-80-exec-3] [20] [INFO ] SimpleFilter.doFilter()----ContentType:null
+[2018-12-29T22:41:14.014Z] [com.filter.SimpleFilter] [http-nio-80-exec-4] [20] [INFO ] SimpleFilter.doFilter()----ContentType:null
+[2018-12-29T22:41:14.014Z] [com.filter.SimpleFilter] [http-nio-80-exec-6] [20] [INFO ] SimpleFilter.doFilter()----ContentType:null
+[2018-12-29T22:41:14.014Z] [com.filter.SimpleFilter] [http-nio-80-exec-2] [20] [INFO ] SimpleFilter.doFilter()----ContentType:null
+[2018-12-29T22:41:14.014Z] [com.filter.SimpleFilter] [http-nio-80-exec-5] [20] [INFO ] SimpleFilter.doFilter()----ContentType:null
+[2018-12-29T22:41:14.014Z] [com.filter.SimpleFilter] [http-nio-80-exec-9] [20] [INFO ] SimpleFilter.doFilter()----ContentType:null
+[2018-12-29T22:41:14.014Z] [com.filter.SimpleFilter] [http-nio-80-exec-10] [20] [INFO ] SimpleFilter.doFilter()----ContentType:null
+[2018-12-29T22:41:14.014Z] [com.filter.SimpleFilter] [http-nio-80-exec-7] [20] [INFO ] SimpleFilter.doFilter()----ContentType:null
+[2018-12-29T22:41:14.014Z] [com.filter.SimpleFilter] [http-nio-80-exec-8] [20] [INFO ] SimpleFilter.doFilter()----ContentType:null
+[2018-12-29T22:41:14.014Z] [com.filter.SimpleFilter] [http-nio-80-exec-1] [20] [INFO ] SimpleFilter.doFilter()----ContentType:null
+[2018-12-29T22:41:14.014Z] [com.filter.SimpleFilter] [http-nio-80-exec-6] [20] [INFO ] SimpleFilter.doFilter()----ContentType:null
+[2018-12-29T22:41:14.014Z] [com.filter.SimpleFilter] [http-nio-80-exec-2] [20] [INFO ] SimpleFilter.doFilter()----ContentType:null
