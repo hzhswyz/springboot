@@ -26,9 +26,16 @@ public class SampleController {
         return "Hello World!";
     }
 
-    @RequestMapping("/")
-    public String index() {
-        return "/index.html";
+
+    @RequestMapping("/test")
+    public String test() {
+        log.info("test");
+        return "other";
+    }
+
+    @RequestMapping(value = "/thymeleafindex")
+    public String thymeleafindex() {
+        return "thymeleafindex";
     }
 
     //SpringBoot 默认是无法使用矩阵变量绑定参数的。需要覆盖WebMvcConfigurer中的configurePathMatch方法。
