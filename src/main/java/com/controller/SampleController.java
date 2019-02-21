@@ -4,15 +4,20 @@ import com.exception.NotfoundException;
 import com.javabean.UserBean;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.MessageSource;
+import org.springframework.context.i18n.LocaleContextHolder;
 import org.springframework.http.HttpEntity;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.Collection;
 import java.util.HashMap;
+import java.util.Locale;
 import java.util.Map;
 
 @Controller
@@ -20,8 +25,9 @@ public class SampleController {
 
     private static final Logger log = LoggerFactory.getLogger(SampleController.class);
 
+
     @ResponseBody
-    @RequestMapping("/home")
+    @RequestMapping("/HelloWorld")
     public String home() {
         return "Hello World!";
     }
@@ -36,6 +42,15 @@ public class SampleController {
     @RequestMapping(value = "/thymeleafindex")
     public String thymeleafindex() {
         return "thymeleafindex";
+    }
+
+    @RequestMapping(value = "/")
+    public String index() {
+        return "index";
+    }
+    @RequestMapping(value = "/welcome")
+    public String welcome() {
+        return "welcome";
     }
 
     //SpringBoot 默认是无法使用矩阵变量绑定参数的。需要覆盖WebMvcConfigurer中的configurePathMatch方法。
@@ -88,6 +103,7 @@ public class SampleController {
     public ResponseEntity<Object> createException() {
         throw new NotfoundException();
     }
+
 
 
 }

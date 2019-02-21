@@ -1,8 +1,6 @@
 package com.controller;
 
-import com.exception.NotfoundException;
 import org.apache.log4j.Logger;
-import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
